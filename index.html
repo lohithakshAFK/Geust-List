@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Guest list</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <center>
+        <h1>
+            Guest List
+        </h1>
+        <p>Guest List</p>
+        <div>
+            <span>
+                <input class="form-control" id="input_name" type="text" placeholder="Name">
+            </span>
+            <span>
+                <button class="btn-danger" onclick="add_name()">Add</button>
+            </span>
+        </div>
+        <div>
+            <hr>
+            <div id="show">
+
+            </div>
+            <hr>
+        </div>
+        <div>
+            <button class="btn-primary" onclick="show_names()">Show List</button>
+            <hr>
+            <br>
+            <hr>
+            <button class="btn-danger" onclick="sort_names()">Show Sorted List</button>
+            <br>
+            <hr>
+            <br>
+            <div id="sort_names_display">
+
+            </div>
+            <hr>
+            <h3><kbd>Search Names</kbd></h3>
+            <hr>
+            <br>
+            <span>
+                <input class="form-control" type="text" id="search_names" placeholder="Search Names">
+            </span>
+            <span>
+                <button style="margin-left: 10px;" class="btn-success" onclick="search()">Search</button>
+            </span>
+            <hr>
+            <br>
+            <div id="search_display">
+                
+            </div>
+        </div>
+        </center>
+    </body>
+</html>
